@@ -158,13 +158,13 @@ TARGET_UNIFIED_DEVICE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
 BOARD_HAS_NO_SELECT_BUTTON := true
-HAVE_SELINUX := true
+HAVE_SELINUX := false
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    device/motorola/otus/sepolicy
+# BOARD_SEPOLICY_DIRS += \
+#    device/motorola/otus/sepolicy
 
 MALLOC_IMPL := dlmalloc
 
